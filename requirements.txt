@@ -1,0 +1,5 @@
+pandas # Biblioteca para manipulação e análise de dados
+numpy # Biblioteca para manipulação de arrays e matrizes
+matplotlib # Biblioteca para criação de gráficos
+seaborn # Biblioteca para visualização de dados
+scikit-learn # Biblioteca para aprendizado de máquina
