@@ -36,7 +36,7 @@ plt.rcParams['figure.figsize'] = (8, 5)
 
 BASE_DIR = Path(__file__).resolve().parent
 
-DATA_PATH = BASE_DIR / 'sample_data' / 'data.csv'
+DATA_PATH = BASE_DIR / 'data' / 'data.csv'
 
 if not DATA_PATH.exists():
 
@@ -92,7 +92,7 @@ cat = df.select_dtypes(include=['object', 'category'])
 
 
 
-plots_dir = BASE_DIR / 'sample_data' / 'plots'
+plots_dir = BASE_DIR / 'data' / 'graficos'
 
 plots_dir.mkdir(parents=True, exist_ok=True)
 
@@ -190,6 +190,6 @@ else:
 
 
 
-OUT_PATH = BASE_DIR / 'sample_data' / 'estatisticas_descritivas.csv'
+OUT_PATH = BASE_DIR / 'data' / 'estatisticas_descritivas.csv'
 
 df.describe().to_csv(OUT_PATH)
